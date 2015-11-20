@@ -12,5 +12,5 @@ The difference between this and gcc -E is the fact that the latter would include
 
 ## But why?
 
-I wrote this tool in order to simplify coursework submission at university. It could also be used to merge header
+I wrote this tool in order to simplify assignment submission at university. It could also be used to merge header
 files, if such a thing is ever desirable.

@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+USAGE="""camalgamate [sourcefile1 [sourcefile2 [...] ] ]"""
+
+import sys
+import os
+
+import camalgamate
+
+if len(sys.argv) < 2:
+    sys.stderr.write(USAGE + '\n')
+    sys.exit(1)
+
+files = sys.argv[1:]
+
+ordered_files = camalgamate.order_headers(files)
+camalgamate.cat_files(ordered_files, sys.stdout)
